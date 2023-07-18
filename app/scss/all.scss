@@ -1,0 +1,15 @@
+body {
+  background-color: white;
+}
+@import "vendor/_normalize";
+
+@import "base/variable";
+@import "base/font";
+
+// layout and main
+
+// components
+@import "page/style";
+// @import "components/instagramm";
+
+// pages

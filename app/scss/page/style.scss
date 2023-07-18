@@ -1,0 +1,71 @@
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  height: 100vh;
+  .game_title {
+    color: #00d1d2;
+    text-align: center;
+    font-family: "IQOSSans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .game_wrapper {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    // gap: 20px;
+    .game_item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .item_title {
+        margin-bottom: 30px;
+        color: #00d1d2;
+        text-align: center;
+        font-family: "IQOSSans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      .item_image {
+        width: 60%;
+      }
+    }
+  }
+  .game_validate {
+    margin-top: 20px;
+    width: 100%;
+    height: 30vh;
+    .puzzle_container {
+      margin: 0 auto;
+      width: 50%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      .puzzle_field_1 {
+        margin-top: 25px;
+        margin-left: 25px;
+      }
+      .puzzle_field_2 {
+        transform: rotate(90deg);
+        margin-top: -15px;
+        margin-left: -65px;
+      }
+      .puzzle_field_3 {
+        transform: rotate(270deg);
+        margin-top: -65px;
+        margin-left: 63px;
+      }
+      .puzzle_field_4 {
+        transform: rotate(180deg);
+        margin-top: -105px;
+        margin-left: -27px;
+      }
+    }
+  }
+}

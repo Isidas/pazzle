@@ -1,0 +1,52 @@
+// font
+
+
+@font-face {
+    font-family: 'IQOSSans';
+    src: url('../fonts/IQOSSans-Light.woff') format("opentype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IQOSSans';
+    src: url('../fonts/IQOSSans-LightItalic.woff') format("opentype");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IQOSSans';
+    src: url('../fonts/IQOSSans-Regular.woff') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IQOSSans';
+    src: url('../fonts/IQOSSans-Italic.woff') format("opentype");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IQOSSans';
+    src: url('../fonts/IQOSSans-Bold.woff') format("opentype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/IQOSSans-BoldItalic.woff') format("opentype");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}

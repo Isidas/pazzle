@@ -1,7 +1,7 @@
 .container {
   margin: 0 auto;
   max-width: 800px;
-  height: 100vh;
+  height: auto;
   .game_title {
     color: #00d1d2;
     text-align: center;
@@ -18,6 +18,7 @@
     grid-template-columns: repeat(3, 1fr);
     // gap: 20px;
     .game_item {
+      transition: 0.3s ease-in-out;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -33,39 +34,122 @@
         line-height: normal;
       }
       .item_image {
-        width: 60%;
+        width: 120px;
+        height: auto;
       }
+      .item_image_0 {
+        transform: rotate(42deg);
+      }
+      .item_image_1 {
+        transform: rotate(142deg);
+      }
+      .item_image_2 {
+        transform: rotate(90deg);
+      }
+      .item_image_3 {
+        transform: rotate(85deg);
+      }
+      .item_image_4 {
+        transform: rotate(270deg);
+      }
+      .item_image_5 {
+        transform: rotate(180deg);
+      }
+      
+    }
+    .disabled {
+      opacity: 0.5;
     }
   }
   .game_validate {
     margin-top: 20px;
     width: 100%;
-    height: 30vh;
+    height: 50vh;
+    position: relative;
+    text-align: center;
+    .btn_validate {
+      z-index: 100;
+      position: absolute;
+      left: 50%; 
+      width: 25%;
+      text-align: center;
+      transform: translateX(-50%);
+      bottom: -20px;
+      border: none;
+      border-radius: 25px;
+      height: 37px;
+      font-size: 14px;
+      transition: .15s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #00d2d3;
+      border-color: #00d2d3;
+      font-family: "IQOSSans";
+    }
+    
     .puzzle_container {
       margin: 0 auto;
       width: 50%;
       height: 100%;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      position: relative;
+      .puzzle_field {
+        position: absolute;
+        width: 150px;
+        height: auto;
+      }
       .puzzle_field_1 {
-        margin-top: 25px;
-        margin-left: 25px;
+        left: 0px;
+        top: 0px;
       }
       .puzzle_field_2 {
         transform: rotate(90deg);
-        margin-top: -15px;
-        margin-left: -65px;
+        left: 125px;
+        top: -30px;
       }
       .puzzle_field_3 {
         transform: rotate(270deg);
-        margin-top: -65px;
-        margin-left: 63px;
+        left: 32px;
+        top: 126px;
       }
       .puzzle_field_4 {
         transform: rotate(180deg);
-        margin-top: -105px;
-        margin-left: -27px;
+        left: 157px;
+        top: 97px;
       }
     }
+    
+  }
+  .btn_again {
+    z-index: 100;
+    position: absolute;
+    left: 50%; 
+    width: 25%;
+    text-align: center;
+    transform: translateX(-50%);
+    bottom: -20px;
+    border: none;
+    border-radius: 25px;
+    height: 37px;
+    font-size: 14px;
+    transition: .15s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00d2d3;
+    border-color: #00d2d3;
+    font-family: "IQOSSans";
+  }
+  .btn_hide {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .footer {
+
   }
 }
+.grayed-out {
+  filter: grayscale(100%);
+}
+
+
